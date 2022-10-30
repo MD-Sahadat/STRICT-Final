@@ -1,0 +1,280 @@
+/* common css start */
+*{
+    font-family: 'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+.container{
+    width: 70%;
+}
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+/* common css end */
+/* navbar start */
+.navbar{
+    padding: 13px 0px;
+}
+.navbar .navbar-brand span{
+    font-weight: bold;
+    font-size: 23px;
+    color: #2D3951;
+    margin: 6px;
+}
+.navbar .navbar-nav .nav-item{
+    margin: 0px 3px;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    font-size: 20px;
+    font-weight: 400;
+    color: #2D3951;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color: #15A4FA;
+}
+.navbar-toggler {
+    color: #15A4FA;
+}
+/* navbar end */
+/* banner start */
+.banner{
+    background: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+/*
+.banner .banner-content{
+    margin-top: 50px;
+}
+*/
+.banner h1{
+    font-size: 100px;
+    color: white;
+    font-weight: 700;
+    margin-top: 190px;
+    position: relative;
+}
+.banner h1::after{
+    position: absolute;
+    content:"";
+    width: 35%;
+    height: 3px;
+    background: #0976b4;
+    top: 140px;
+    right: 440px;
+}
+.banner p{
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.banner h6 a{
+    text-decoration: none;
+    border: 1px solid #15A4FA;
+    color: white;
+    padding: 15px 30px;
+    transition: 0.5s;
+}
+.banner h6 a:hover{
+    background-color: #15A4FA;
+    color: #2D3950;
+}
+/* banner end */
+/* description start */
+.description .container{
+    width: 65%;
+}
+.description h1{
+    color: #2E3950;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.description p{
+    font-size: 18px;
+    color: #999999;
+    line-height: 28px;
+}
+.description .description-section{
+    margin: 70px 0px;
+}
+/* description end */
+/* features start */
+.features{
+    margin: 60px 0px 80px 0px;
+}
+.features-section{
+    margin-top: 40px;
+}
+.features-section .img-fluid{
+    width:13%;
+}
+.features-section a{
+    background-color: #15A4FA;
+    padding: 30px 22px;
+    border-radius: 3px;
+}
+.features-section a:hover{
+    background-color: #5FC3FF;
+}
+.features-section h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #2d3950;
+}
+.features-section p{
+    font-size: 15px;
+    color: #999999;
+}
+/* features end*/
+/* portfolio-content start */
+.portfolio-content .container{
+    width: 65%;
+}
+.portfolio-content h1{
+    color: #2E3950;
+    font-weight: 400;
+}
+.portfolio-content p{
+    font-size: 15px;
+    color: #999999;
+}
+.portfolio-content .portfolio-content-section{
+    margin: 50px 0px;
+}
+/* portfolio-content end */
+/* portfolio start */
+.portfolio{
+    margin-bottom: 80px;
+}
+.portfolio-section{
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 3px;
+}
+.portfolio-section{
+    position: relative;
+}
+.portfolio-section img{
+    height: 100%;
+    width: 100%;
+}
+.portfolio-section .portfolio-section-overlay{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: #15A4FA;
+    cursor: pointer;
+}
+.portfolio-section .portfolio-section-overlay .icon{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.portfolio-section .portfolio-section-overlay .icon a i{
+    color: white;
+    padding: 10px 12px;
+    border: 1px solid white;
+}
+.portfolio-section .portfolio-section-overlay .icon a i:hover{
+    background: #0976b4;
+}
+.portfolio-section:hover .portfolio-section-overlay{
+    opacity: 0.8;
+}
+/* portfolio end */
+/* form-content start */
+.form-content-section{
+    background: linear-gradient(rgba(45,57,80,.9), rgba(45,57,80,.9)), url(../img/form.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 680px;
+}
+.form-content h1{
+    color: #ffffff;
+    font-weight: 400;
+}
+.form-content p{
+    font-size: 15px;
+    color: #999999;
+}
+.form-content .container{
+    width: 32%;
+}
+.form-content .message .form-control{
+    height: 150px;
+}
+.form-content h1{
+    margin-top: 50px;
+}
+.form-content .form-check{
+    width: 40%;
+    margin-top: 30px;
+    display: block;
+    padding-left: 1.5em;
+    margin-bottom: 0.125rem;
+}
+.form-content .form-check p{
+    color: white;
+}
+.form-check-input {
+    background-color: #a4a4a4;
+}
+.form-content .send h6 a{
+    text-decoration: none;
+    border: 1px solid #15A4FA;
+    color: white;
+    padding: 12px 45px;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+.form-content .send h6 a:hover{
+    background-color: #15A4FA;
+    color: #2D3950;
+}
+.form-control {
+    padding: 1rem 0.75rem;
+    color: #212529;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #999999;
+    border-radius: 0.275rem;
+}
+/* form-content end */
+/* footer start */
+.footer .footer-section{
+    margin: 40px 0px;
+}
+.footer .footer-section p{
+    color: #999999;
+}
+.footer .footer-section .icon a{
+    padding: 10px 14px;
+    background: #15A4FA;
+    margin: 1px;
+    border-radius: 3px;
+}
+.footer .footer-section .icon a:hover{
+    background: #0976b4;
+}
+/* footer end */
